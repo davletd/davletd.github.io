@@ -120,15 +120,41 @@
     .link-sub {
       color: var(--muted);
       font-size: 13px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
     .arrow {
       color: var(--muted);
       flex-shrink: 0;
       font-size: 18px;
       line-height: 1;
+    }
+    .qr-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+    .qr {
+      width: 220px;
+      height: 220px;
+      max-width: 100%;
+      background: #ffffff;
+      padding: 12px;
+      border-radius: 10px;
+      display: block;
+    }
+    .qr-url {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 14px;
+      color: var(--fg);
+      margin: 0;
+      word-break: break-all;
+      text-align: center;
     }
     footer {
       text-align: center;
@@ -157,21 +183,21 @@
         <a class="link" href="https://cloudgeni.ai" rel="noopener">
           <span class="link-text">
             <span class="link-title">Cloudgeni</span>
-            <span class="link-sub">Autonomous infra agents for AWS, Azure, GCP, OCI</span>
+            <span class="link-sub">cloudgeni.ai</span>
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
         <a class="link" href="https://opengeni.ai" rel="noopener">
           <span class="link-text">
             <span class="link-title">OpenGeni</span>
-            <span class="link-sub">Self-hostable managed agent service</span>
+            <span class="link-sub">opengeni.ai</span>
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
         <a class="link" href="https://github.com/Cloudgeni-ai/infrastructure-agents-guide" rel="noopener">
           <span class="link-text">
             <span class="link-title">Infrastructure Agents Guide</span>
-            <span class="link-sub">How to build and operate infra agents — safely</span>
+            <span class="link-sub">github.com/Cloudgeni-ai/infrastructure-agents-guide</span>
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
@@ -184,21 +210,21 @@
         <a class="link" href="https://github.com/davletd" rel="noopener">
           <span class="link-text">
             <span class="link-title">GitHub</span>
-            <span class="link-sub">@davletd</span>
+            <span class="link-sub">github.com/davletd</span>
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
         <a class="link" href="https://www.linkedin.com/in/davletd/" rel="noopener">
           <span class="link-text">
             <span class="link-title">LinkedIn</span>
-            <span class="link-sub">in/davletd</span>
+            <span class="link-sub">linkedin.com/in/davletd</span>
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
         <a class="link" href="https://x.com/DavletDzh" rel="noopener">
           <span class="link-text">
             <span class="link-title">X</span>
-            <span class="link-sub">@DavletDzh</span>
+            <span class="link-sub">x.com/DavletDzh</span>
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
@@ -209,6 +235,14 @@
           </span>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
+      </div>
+    </section>
+
+    <section class="share">
+      <p class="label">Share this page</p>
+      <div class="qr-card">
+        <img class="qr" src="qr.svg" alt="QR code linking to davletd.github.io" width="220" height="220" />
+        <p class="qr-url">davletd.github.io</p>
       </div>
     </section>
 
