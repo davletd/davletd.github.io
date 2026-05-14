@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Davlet Dzhakishev</title>
+  <meta name="description" content="Davlet Dzhakishev — founder of Cloudgeni. Links to projects, writing, and socials." />
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>D</text></svg>" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0b0b0c;
+      --muted: #6b7280;
+      --card: #f5f5f5;
+      --card-hover: #ececec;
+      --border: rgba(0, 0, 0, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0c;
+        --fg: #f5f5f7;
+        --muted: #9aa0a6;
+        --card: #161617;
+        --card-hover: #1f1f21;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.5;
+      min-height: 100svh;
+      display: flex;
+      justify-content: center;
+      padding: 32px 20px 48px;
+    }
+    main {
+      width: 100%;
+      max-width: 460px;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+      padding: 8px 0 24px;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 4px 0 0;
+      letter-spacing: -0.01em;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+      max-width: 320px;
+    }
+    .location {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+    }
+    section + section { margin-top: 24px; }
+    .label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 10px 4px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    a.link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      color: var(--fg);
+      text-decoration: none;
+      min-height: 56px;
+      transition: background 0.15s ease, transform 0.05s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    a.link:hover { background: var(--card-hover); }
+    a.link:active { transform: scale(0.99); }
+    .link-text {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .link-title {
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .link-sub {
+      color: var(--muted);
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .arrow {
+      color: var(--muted);
+      flex-shrink: 0;
+      font-size: 18px;
+      line-height: 1;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 32px;
+    }
+    @media (max-width: 380px) {
+      h1 { font-size: 20px; }
+      .tagline { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/2204825?v=4" alt="Davlet Dzhakishev" width="88" height="88" />
+      <h1>Davlet Dzhakishev</h1>
+      <p class="tagline">Founder of Cloudgeni. Building autonomous infrastructure agents.</p>
+      <p class="location">Oslo, Norway</p>
+    </header>
+
+    <section>
+      <p class="label">Work</p>
+      <div class="links">
+        <a class="link" href="https://cloudgeni.ai" rel="noopener">
+          <span class="link-text">
+            <span class="link-title">Cloudgeni</span>
+            <span class="link-sub">Autonomous infra agents for AWS, Azure, GCP, OCI</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://opengeni.ai" rel="noopener">
+          <span class="link-text">
+            <span class="link-title">OpenGeni</span>
+            <span class="link-sub">Self-hostable managed agent service</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://github.com/Cloudgeni-ai/infrastructure-agents-guide" rel="noopener">
+          <span class="link-text">
+            <span class="link-title">Infrastructure Agents Guide</span>
+            <span class="link-sub">How to build and operate infra agents — safely</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <p class="label">Connect</p>
+      <div class="links">
+        <a class="link" href="https://github.com/davletd" rel="noopener">
+          <span class="link-text">
+            <span class="link-title">GitHub</span>
+            <span class="link-sub">@davletd</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/davletd/" rel="noopener">
+          <span class="link-text">
+            <span class="link-title">LinkedIn</span>
+            <span class="link-sub">in/davletd</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="https://x.com/DavletDzh" rel="noopener">
+          <span class="link-text">
+            <span class="link-title">X</span>
+            <span class="link-sub">@DavletDzh</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link" href="mailto:davlet@cloudgeni.ai">
+          <span class="link-text">
+            <span class="link-title">Email</span>
+            <span class="link-sub">davlet@cloudgeni.ai</span>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Davlet Dzhakishev
+    </footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
